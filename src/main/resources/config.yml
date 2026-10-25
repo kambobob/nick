@@ -1,0 +1,13 @@
+# Allowed nickname length (letters, numbers, and underscores only)
+min-length: 3
+max-length: 16
+
+# Words that cannot appear in a nickname (case-insensitive, substring match)
+blocked-words:
+  - admin
+  - owner
+  - staff
+  - mod
+  - helper
+  -head-helper
+  -manager
