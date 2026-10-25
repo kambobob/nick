@@ -1,0 +1,21 @@
+name: Nick
+version: 1.0.0
+main: dev.example.nick.NickPlugin
+description: Set a nickname shown in chat and the tab list (Folia compatible)
+author: you
+api-version: '26.2'
+folia-supported: true
+
+commands:
+  nick:
+    description: Set, reset, or look up nicknames
+    usage: /<command> <name> | reset | whois <nick> | admin <set|clear> <player> [name]
+    aliases: [nickname]
+
+permissions:
+  nick.use:
+    description: Set your own nickname
+    default: true
+  nick.admin:
+    description: Manage other players' nicknames and look up real names
+    default: op
